@@ -1,0 +1,149 @@
+.stories-container {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #d5c3d6;
+  min-height: 100vh;
+  color: #333;
+}
+
+.stories-container h2 {
+  font-size: 2rem;
+  color: #ff8fab;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.story-form {
+  margin: 0 auto 40px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.story-form textarea {
+  width: 100%;
+  height: 120px;
+  border: 2px solid #ffd6e0;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1rem;
+  resize: none;
+  background: #fff;
+  color: #333;
+}
+
+.story-form button {
+  margin-top: 15px;
+  background: #ffb6c1;
+  color: #333;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.story-form button:hover {
+  background: #ff8fab;
+  color: white;
+}
+
+.story-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.story-card {
+  background: rgba(255, 240, 245, 0.8);
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.story-text {
+  font-size: 1.1rem;
+  color: #444;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.story-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.love-btn {
+  background: none;
+  border: none;
+  color: #ff4f79;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.love-btn:hover {
+  transform: scale(1.1);
+}
+
+.comments-section {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.comments-section h4 {
+  color: #ff8fab;
+  margin-bottom: 5px;
+}
+
+.comment {
+  background: #ffeef2;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+.comment-form {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ffb6c1;
+  border-radius: 20px;
+}
+
+.comment-form button {
+  background: #ff8fab;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.comment-form button:hover {
+  background: #ff4f79;
+}
+
+.no-stories,
+.no-comments {
+  color: #888;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}

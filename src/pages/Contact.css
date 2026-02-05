@@ -1,0 +1,131 @@
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+}
+
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  background: #fff;
+  box-shadow: 0 0 8px #ffb6c1;
+}
+
+.contact-form button {
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  background-color: #ffb6c1;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff8fab;
+  color: #fff;
+}
+
+.success-msg {
+  color: #fff;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
