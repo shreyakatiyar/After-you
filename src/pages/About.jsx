@@ -1,10 +1,10 @@
 import React from 'react'
 import './About.css';
-import navbar from '../components/Navbar';
+import Navbar from '../components/Navbar';
 const About = () => {
   return (
     <>
-    <navbar/>
+    <Navbar/>
     <div className="about-container">
       <div id="box-left" >
     <img src="https://i.pinimg.com/564x/0c/2a/c8/0c2ac8e6c977e2e51ed2037a7373a66b.jpg" alt="girl-img" />

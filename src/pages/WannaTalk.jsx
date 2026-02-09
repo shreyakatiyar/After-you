@@ -37,12 +37,15 @@ function WannaTalk() {
   return (
 
     <>
+    <div className="wanna-talk-header">
+      <h1>Wanna Talk?</h1>
+      <p>Chat with Luna to share your feelings and get some gentle advice</p>
+    
+     <div className="wanna-layout">
       <div className="main-container">
         <p>Articles on the mental health of girls indicate that they experience higher rates of anxiety, mood disorders, and eating disorders, often exacerbated by factors like societal pressures, gender disadvantage, and early marriage. Mental health challenges can also impact physical health and academic performance, and some studies suggest the need for systemic change to address the underlying causes, though girls' stronger social networks and willingness to talk about feelings can be protective factors.  </p>
       </div>
       <div className="chat-container">
-
-
         <div className="chat-box">
           {messages.map((msg, index) => (
             <div
@@ -64,6 +67,8 @@ function WannaTalk() {
           />
           <button onClick={handleSend}>Send 💌</button>
         </div>
+      </div>
+      </div>
       </div>
     </>
   );

@@ -11,7 +11,7 @@ function Home() {
 
   const fetchQuote = async () => {
     try {
-      const response = await fetch("https://type.fit/api/quotes");
+      const response = await fetch("https://corsproxy.io/?https://type.fit/api/quotes");
       const data = await response.json();
       const randomIndex = Math.floor(Math.random() * data.length);
       setQuote(data[randomIndex].text);

@@ -1,7 +1,7 @@
 .stories-container {
   padding: 50px 20px;
   text-align: center;
-  background-color: #d5c3d6;
+   background-color: rgb(240, 205, 223);
   min-height: 100vh;
   color: #333;
 }

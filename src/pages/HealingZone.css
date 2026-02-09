@@ -1,50 +1,49 @@
 .services-section {
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 70px;
-  padding: 60px 20px;
+  margin-top: 90px; /* increased to avoid navbar overlap */
+  padding: 40px 16px;
   text-align: center;
-    
+  /* background-color: rgb(240, 205, 223); */
 }
 
 .services-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 10px;
-  /* margin-top: 30px; */
+  margin-bottom: 8px;
   color: #111827;
-
-  
 }
 
 .services-subtitle {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #6b7280;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
 }
 
+/* CARD */
 .service-card {
- 
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  background: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* IMAGE */
 .service-img-wrapper {
   width: 100%;
-  height: 180px;
+  height: 160px; /* reduced for mobile */
   overflow: hidden;
 }
 
@@ -52,43 +51,51 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
 }
 
-.service-card:hover .service-img {
-  transform: scale(1.05);
-}
-
+/* CONTENT */
 .service-content {
-  padding: 20px;
+  padding: 16px;
   text-align: left;
 }
 
 .service-content h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
 }
 
 .service-content p {
-  font-size: 0.95rem;
-  color: #4b5563;
-  margin-bottom: 16px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 14px;
 }
 
+/* BUTTON */
 .service-btn {
   background-color: #4f46e5;
   color: white;
   border: none;
-  padding: 8px 18px;
+  padding: 7px 16px;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
+  font-size: 0.85rem;
 }
 
-.service-btn:hover {
-  background-color: #3730a3;
+/* 🔥 MOBILE FIX */
+@media (max-width: 600px) {
+  .services-title {
+    font-size: 1.6rem;
+  }
+
+  .services-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .service-img-wrapper {
+    height: 140px;
+  }
+
+  .service-content {
+    padding: 14px;
+  }
 }
