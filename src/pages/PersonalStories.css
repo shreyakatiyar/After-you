@@ -1,149 +1,236 @@
+/* ===== STORIES PAGE ===== */
 .stories-container {
-  padding: 50px 20px;
+  padding: 70px 20px;
   text-align: center;
-   background-color: rgb(240, 205, 223);
   min-height: 100vh;
-  color: #333;
+
+  background: linear-gradient(
+    180deg,
+    #fff0f6 0%,
+    #fde7f0 45%,
+    #ffffff 100%
+  );
+
+  color: #1f2937;
 }
 
+/* ===== TITLE ===== */
 .stories-container h2 {
-  font-size: 2rem;
-  color: #ff8fab;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #ec4899;
   margin-bottom: 10px;
+  letter-spacing: -0.5px;
 }
 
+/* ===== SUBTITLE ===== */
 .subtitle {
-  color: #777;
-  margin-bottom: 30px;
+  color: #6b7280;
+  margin-bottom: 45px;
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
 }
 
+/* ===== STORY FORM ===== */
 .story-form {
-  margin: 0 auto 40px auto;
-  width: 80%;
-  max-width: 600px;
+  margin: 0 auto 60px auto;
+  width: 100%;
+  max-width: 620px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px);
+  padding: 26px;
+  border-radius: 24px;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .story-form textarea {
   width: 100%;
-  height: 120px;
-  border: 2px solid #ffd6e0;
-  border-radius: 15px;
-  padding: 15px;
+  height: 130px;
+  border: 2px solid #fbcfe8;
+  border-radius: 18px;
+  padding: 16px;
   font-size: 1rem;
   resize: none;
-  background: #fff;
-  color: #333;
+  background: #ffffff;
+  color: #374151;
+  line-height: 1.6;
+  outline: none;
 }
 
+.story-form textarea:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
+}
+
+/* ===== POST BUTTON ===== */
 .story-form button {
-  margin-top: 15px;
-  background: #ffb6c1;
-  color: #333;
+  margin-top: 18px;
+  background: linear-gradient(135deg, #f472b6, #ec4899);
+  color: #ffffff;
   border: none;
-  padding: 10px 25px;
-  border-radius: 25px;
+  padding: 10px 28px;
+  border-radius: 999px;
   font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
 }
 
 .story-form button:hover {
-  background: #ff8fab;
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(236, 72, 153, 0.4);
 }
 
+/* ===== STORY LIST ===== */
 .story-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
 }
 
+/* ===== STORY CARD ===== */
 .story-card {
-  background: rgba(255, 240, 245, 0.8);
-  padding: 20px;
-  border-radius: 20px;
-  width: 80%;
-  max-width: 600px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 24px;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 620px;
   text-align: left;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
 }
 
+.story-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ===== STORY TEXT ===== */
 .story-text {
-  font-size: 1.1rem;
-  color: #444;
+  font-size: 1.05rem;
+  color: #374151;
   font-style: italic;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  line-height: 1.7;
 }
 
+/* ===== ACTIONS ===== */
 .story-actions {
   display: flex;
   justify-content: flex-end;
 }
 
+/* ===== LOVE BUTTON ===== */
 .love-btn {
   background: none;
   border: none;
-  color: #ff4f79;
+  color: #ec4899;
   cursor: pointer;
-  font-weight: bold;
-  transition: transform 0.2s ease;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .love-btn:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  color: #db2777;
 }
 
+/* ===== COMMENTS ===== */
 .comments-section {
-  margin-top: 15px;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 10px 15px;
-  border-radius: 10px;
+  margin-top: 18px;
+  background: rgba(249, 168, 212, 0.18);
+  padding: 14px 18px;
+  border-radius: 18px;
 }
 
 .comments-section h4 {
-  color: #ff8fab;
-  margin-bottom: 5px;
-}
-
-.comment {
-  background: #ffeef2;
-  padding: 5px 10px;
-  margin: 5px 0;
-  border-radius: 10px;
+  color: #ec4899;
+  margin-bottom: 8px;
   font-size: 0.95rem;
 }
 
+/* ===== COMMENT ===== */
+.comment {
+  background: #ffffff;
+  padding: 7px 12px;
+  margin: 6px 0;
+  border-radius: 14px;
+  font-size: 0.9rem;
+  color: #374151;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== COMMENT FORM ===== */
 .comment-form {
   display: flex;
-  margin-top: 10px;
+  margin-top: 12px;
   gap: 10px;
 }
 
 .comment-form input {
   flex: 1;
-  padding: 8px 12px;
-  border: 1px solid #ffb6c1;
-  border-radius: 20px;
+  padding: 9px 14px;
+  border: 1px solid #f9a8d4;
+  border-radius: 999px;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.comment-form input:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.2);
 }
 
 .comment-form button {
-  background: #ff8fab;
+  background: linear-gradient(135deg, #ec4899, #db2777);
   border: none;
   color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
+  padding: 9px 18px;
+  border-radius: 999px;
   cursor: pointer;
+  font-size: 0.85rem;
   transition: 0.3s;
 }
 
 .comment-form button:hover {
-  background: #ff4f79;
+  box-shadow: 0 8px 18px rgba(236, 72, 153, 0.45);
 }
 
+/* ===== EMPTY STATES ===== */
 .no-stories,
 .no-comments {
-  color: #888;
-  font-size: 0.95rem;
-  margin: 5px 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 6px 0;
+  text-align: center;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .stories-container {
+    padding: 50px 16px;
+  }
+
+  .stories-container h2 {
+    font-size: 1.9rem;
+  }
+
+  .story-form {
+    padding: 20px;
+  }
+
+  .story-card {
+    padding: 20px;
+  }
 }

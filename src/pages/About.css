@@ -5,7 +5,7 @@
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    /* height: 100vh; */
+    height: 100vh;
     /* background-color: #c61616; */
     text-align: center;
     gap: 10%;
@@ -47,3 +47,93 @@
        
 
    }
+
+   /* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+/* Tablets & small laptops */
+@media (max-width: 900px) {
+  .story-form,
+  .story-card {
+    max-width: 92%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+  .stories-container {
+    padding: 45px 14px;
+  }
+
+  .stories-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 35px;
+  }
+
+  /* FORM */
+  .story-form {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .story-form textarea {
+    height: 110px;
+    font-size: 0.95rem;
+  }
+
+  .story-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* STORY CARD */
+  .story-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .story-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* COMMENTS */
+  .comments-section {
+    padding: 12px;
+  }
+
+  .comment {
+    font-size: 0.85rem;
+  }
+
+  /* COMMENT FORM STACK */
+  .comment-form {
+    flex-direction: column;
+  }
+
+  .comment-form input,
+  .comment-form button {
+    width: 100%;
+  }
+
+  .comment-form button {
+    padding: 9px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .stories-container h2 {
+    font-size: 1.6rem;
+  }
+
+  .story-text {
+    font-size: 0.9rem;
+  }
+}

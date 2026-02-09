@@ -47,3 +47,18 @@ html {
 section {
   scroll-margin-top: 90px;
 }
+
+
+/* ===== GLOBAL SECTION FIX ===== */
+section {
+  width: 100%;
+  min-height: 100vh;          /* allows content to grow */
+  padding: 100px 20px;        /* space for fixed navbar */
+  box-sizing: border-box;
+  scroll-margin-top: 90px;    /* navbar height */
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}

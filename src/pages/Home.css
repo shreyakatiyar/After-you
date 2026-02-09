@@ -89,7 +89,7 @@
 .todays-quote-btn {
   position: absolute;
   bottom: 30px;
-  left: 30px;
+  right: 30px;
   background-color: #ffb6c1;
   color: #333;
   border: none;
