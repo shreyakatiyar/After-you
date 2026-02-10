@@ -6,7 +6,8 @@
   /* right: 80px; */
   width: 100%;
   height: 60px;      /* adjust as needed */
-  /* background: rgba(0, 0, 0, 0.6); thoda transparent background */
+  background: blur(10px); /* transparent background */
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,8 +15,27 @@
   color: rgb(20, 19, 19);
   z-index: 9999;   /* sabse upar show hoga */
   scroll-margin-top: 90px; /* navbar height */
+  
+
+}
+/* BLUR LAYER */
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  pointer-events: none;
+  z-index: -1;
 }
 
+/* navbar content stays sharp */
+.navbar *{
+  position: relative;
+  z-index: 2;
+}
 
 
 .logo {
@@ -55,7 +75,7 @@
     position: absolute;
     top: 60px;
     right: 0;
-    background: rgba(0,0,0,0.9);
+    background: rgba(243, 240, 240, 0.9);
     flex-direction: column;
     width: 200px;
     max-height: 0;
@@ -66,4 +86,21 @@
   .nav-links.open {
     max-height: 300px;
   }
+}
+
+
+/* 🔴 Logout Button */
+.logout-btn {
+  border: none;
+  background: transparent;
+  color: #ef4444;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.logout-btn:hover {
+  color: #dc2626;
+  transform: scale(1.05);
 }

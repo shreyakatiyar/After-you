@@ -1,139 +1,106 @@
+/* ===== ABOUT SECTION ===== */
+.about-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 20px 80px; /* space for navbar */
+  box-sizing: border-box;
 
+  background: linear-gradient(
+    135deg,
+    #fff0f6 0%,
+    #fde2e4 50%,
+    #ffffff 100%
+  );
+}
 
- .about-container {
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    /* background-color: #c61616; */
-    text-align: center;
-    gap: 10%;
-    background-color: rgb(240, 205, 223);
- }
- #box-left {
-    width:auto;
-    height:50%;
-    border-radius: 10%;
-   
- }
- 
- #box-right h3 {
-    margin-top: 10px;
-    font-size: 2.5rem;
-    color: #333;
- }
- /* #box-right {
-    width:50%;
-    height:70%;
-    margin-top: 10%;
-    /* background-color: blue;
- } */
- 
+/* WRAPPER */
+.about-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 
-#box-right {
-  width: 50%;
-  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* IMAGE SECTION */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 360px;
+  border-radius: 24px;
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* CONTENT SECTION */
+.about-content {
+  flex: 1.2;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+
   padding: 40px;
-  background: url("https://www.transparenttextures.com/patterns/brush-strokes.png");
-  /* background-color: #fef3c7; */
-  border-radius: 18px;
+  border-radius: 24px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
-   #box-right p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      color: #555;
-      /* margin-bottom: 45px; */
-       
 
-   }
+.about-content h3 {
+  font-size: 2.4rem;
+  color: #ec4899;
+  margin-bottom: 20px;
+}
 
-   /* =========================
-   MOBILE RESPONSIVENESS
-   ========================= */
+.about-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 16px;
+}
 
-/* Tablets & small laptops */
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
 @media (max-width: 900px) {
-  .story-form,
-  .story-card {
-    max-width: 92%;
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-content {
+    padding: 32px;
+  }
+
+  .about-content h3 {
+    font-size: 2rem;
   }
 }
 
-/* Mobile devices */
+/* Mobile */
 @media (max-width: 600px) {
-  .stories-container {
-    padding: 45px 14px;
+  .about-container {
+    padding: 100px 16px 60px;
   }
 
-  .stories-container h2 {
+  .about-image img {
+    max-width: 280px;
+  }
+
+  .about-content {
+    padding: 26px;
+  }
+
+  .about-content h3 {
     font-size: 1.8rem;
   }
 
-  .subtitle {
+  .about-content p {
     font-size: 0.95rem;
-    margin-bottom: 35px;
-  }
-
-  /* FORM */
-  .story-form {
-    padding: 18px;
-    border-radius: 20px;
-  }
-
-  .story-form textarea {
-    height: 110px;
-    font-size: 0.95rem;
-  }
-
-  .story-form button {
-    width: 100%;
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  /* STORY CARD */
-  .story-card {
-    padding: 18px;
-    border-radius: 20px;
-  }
-
-  .story-text {
-    font-size: 0.95rem;
-    line-height: 1.6;
-  }
-
-  /* COMMENTS */
-  .comments-section {
-    padding: 12px;
-  }
-
-  .comment {
-    font-size: 0.85rem;
-  }
-
-  /* COMMENT FORM STACK */
-  .comment-form {
-    flex-direction: column;
-  }
-
-  .comment-form input,
-  .comment-form button {
-    width: 100%;
-  }
-
-  .comment-form button {
-    padding: 9px;
-  }
-}
-
-/* Very small phones */
-@media (max-width: 380px) {
-  .stories-container h2 {
-    font-size: 1.6rem;
-  }
-
-  .story-text {
-    font-size: 0.9rem;
   }
 }

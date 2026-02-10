@@ -1,28 +1,49 @@
-import React from 'react'
-import './About.css';
-import Navbar from '../components/Navbar';
+import React from "react";
+import "./About.css";
+import Navbar from "../components/Navbar";
+
 const About = () => {
   return (
     <>
-    <Navbar/>
-    <div className="about-container">
-      <div id="box-left" >
-    <img src="https://i.pinimg.com/564x/0c/2a/c8/0c2ac8e6c977e2e51ed2037a7373a66b.jpg" alt="girl-img" />
+      <Navbar />
 
-      </div>
-<div id="box-right">
-    <h3>About Us</h3>
-    <p>Welcome to PropertyVerify, your trusted partner in property verification and due diligence. We are dedicated to providing comprehensive and reliable services to ensure that your property transactions are secure and transparent.</p>
-    <p>At PropertyVerify, we understand the importance of making informed decisions when it comes to real estate. Our team of experts utilizes advanced technology and thorough research methods to verify property details, ownership history, legal status, and more.</p>
-    <p>Our mission is to empower buyers, sellers, and investors with accurate information, helping them navigate the complexities of the real estate market with confidence. Whether you're purchasing a new home, investing in commercial property, or selling your assets, PropertyVerify is here to support you every step of the way.</p>
-    {/* <p>Thank you for choosing PropertyVerify. We look forward to assisting you in your property journey.</p> */}
-</div>
+      <section className="about-container" id="about">
+        <div className="about-wrapper">
+          
+          {/* LEFT IMAGE */}
+          <div className="about-image">
+            <img
+              src="https://i.pinimg.com/564x/0c/2a/c8/0c2ac8e6c977e2e51ed2037a7373a66b.jpg"
+              alt="Woman illustration"
+            />
+          </div>
 
-      
-         
-    </div>
+          {/* RIGHT CONTENT */}
+          <div className="about-content">
+            <h3>About Us</h3>
+
+            <p>
+              <strong>After-You</strong> is a safe digital space created
+              exclusively for women — a place to pause, breathe, and be heard.
+            </p>
+
+            <p>
+              We understand that healing is deeply personal. Whether you are
+              seeking comfort, connection, or quiet reflection, After-You
+              exists to support you without judgment.
+            </p>
+
+            <p>
+              Our mission is to empower women to embrace their inner strength,
+              express freely, and find solace in a community built on empathy,
+              care, and understanding.
+            </p>
+          </div>
+
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;
