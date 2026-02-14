@@ -41,7 +41,7 @@ function PersonalStories() {
   // Add a kind comment
   const handleAddComment = (id) => {
     if (newComment.trim() === "") return;
-    const updated = stories.map((story) =>
+    const  updated = stories.map((story) =>
       story.id === id
         ? { ...story, comments: [...story.comments, newComment] }
         : story

@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 const About = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <section className="about-container" id="about">
         <div className="about-wrapper">

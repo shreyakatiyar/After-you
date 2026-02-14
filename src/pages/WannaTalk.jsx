@@ -39,7 +39,7 @@ function WannaTalk() {
     <>
     <div className="wanna-talk-header">
       <h1>Wanna Talk?</h1>
-      <p>Chat with Luna to share your feelings and get some gentle advice</p>
+      <p>Chat with me to share your feelings and get some gentle advice</p>
     
      <div className="wanna-layout">
       <div className="main-container">
