@@ -38,13 +38,21 @@ const Navbar = () => {
   <li><a href="#stories" onClick={() => setIsOpen(false)}>Personal Stories</a></li>
   <li><a href="#chatting" onClick={() => setIsOpen(false)}>Wanna Talk?</a></li>
   <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
-  
-          <li>
-          <button className="logout-btn" onClick={logout}>
-            Logout
-          </button>
+      
+  <li>
+          {isAuth ? (
+            <button className="logout-btn" onClick={logout}>
+              Logout
+            </button>
+          ) : (
+            <button
+              className="login-btn"
+              onClick={() => navigate("/auth")}
+            >
+              Sign In
+            </button>
+          )}
         </li>
-
 </ul>
    
     </div>

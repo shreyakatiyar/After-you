@@ -1,9 +1,14 @@
+
+
 .auth-page {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #fce7f3, #e0f2fe);
+
+  /* High-quality clear background */
+ background: url("https://i.pinimg.com/1200x/a2/da/ec/a2daec5bae2ec9592f68b673048ac724.jpg") no-repeat center center/cover;
+
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -11,21 +16,28 @@
   width: 100%;
   max-width: 380px;
   padding: 34px;
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(16px);
+
+  /* Clear glass effect (no blur) */
+  background: rgba(255, 255, 255, 0.12);
+
   border-radius: 26px;
-  box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  box-shadow: 
+    0 20px 50px rgba(0, 0, 0, 0.3);
+
   text-align: center;
 }
 
+/* Text styling for contrast */
 .auth-card h2 {
   font-size: 2rem;
   font-weight: 800;
-  color: #111827;
+  color: white;
 }
 
 .auth-subtitle {
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.8);
   margin: 10px 0 28px;
   font-size: 0.95rem;
 }
@@ -36,44 +48,56 @@
   gap: 14px;
 }
 
+/* Inputs */
 .auth-card input {
   padding: 13px 16px;
   border-radius: 16px;
-  border: 1px solid #d1d5db;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   font-size: 0.95rem;
   outline: none;
+
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.auth-card input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .auth-card input:focus {
   border-color: #ec4899;
-  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.2);
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.3);
 }
 
+/* Button */
 .auth-card button {
   margin-top: 12px;
   padding: 12px;
   border-radius: 999px;
   border: none;
+
   background: linear-gradient(135deg, #ec4899, #db2777);
   color: white;
   font-weight: 600;
+
   cursor: pointer;
   transition: 0.3s ease;
 }
 
 .auth-card button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(236, 72, 153, 0.45);
+  box-shadow: 0 14px 30px rgba(236, 72, 153, 0.5);
 }
 
+/* Bottom text */
 .switch-text {
   margin-top: 20px;
   font-size: 0.9rem;
-  color: #6b7280;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .switch-text span {
-  color: #ec4899;
+  color: #ff6ec7;
   font-weight: 700;
   cursor: pointer;
   margin-left: 6px;

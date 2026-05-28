@@ -13,7 +13,7 @@ const Auth = () => {
 
     if (email && password) {
       localStorage.setItem("isAuth", "true");
-      navigate("/home");
+      navigate("/");
     }
   };
 

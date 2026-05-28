@@ -1,10 +1,12 @@
+
+
 /* ===== Page Wrapper ===== */
 .wanna-talk-header {
   min-height: 100vh;
   padding: 30px 60px;
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background: linear-gradient(135deg, #fff1eb, #ace0f9);
+  background: url("https://i.pinimg.com/1200x/46/8b/c8/468bc883dda769afbd066f44d5aa8b8a.jpg") no-repeat center center/cover;
   position: relative;
 }
 
